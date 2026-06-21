@@ -56,7 +56,7 @@ pipeline {
                     --env-file .env \
                     --name $CONTAINER_NAME \
                     -p 8086:$PORT \
-                    ${IMAGE_NAME}:${TAG}
+                    ${IMAGE_NAME}:${IMAGE_TAG}
                 '''
             }
         }

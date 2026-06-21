@@ -1,0 +1,18 @@
+from .EnvValues import *
+
+
+URL = "https://www.reddit.com/r/{}.json"
+SUCCEED = 200
+NOT_FOUND = 404
+TIMEOUT = 5000
+HEADER = {'Content-Type': 'application/json', 'Cookie': 'csv=2; edgebucket=rI21wmwpsnlzMgghDO; loid=000000000x9hq5xcx9.2.1711802804129.Z0FBQUFBQm1DQW0wam1MUTZON2ViTXpPYllwZ19XSTgzeWtieEhqVlRPbjlNOFY4N0U0TVZGamxHZXphQTdzZWtyY0pRYU90WldrZUQzZXFxdWdQbWdjZzVlcUF3WGJUaDljNGdFYUhRTlVoQXkwcWNFZE5LNkh6OE1JUWgxYXNvYmJhT29UelNhRHg; session_tracker=edgrqlagnbihegljea.0.1711802804138.Z0FBQUFBQm1DQW0wdnROeHVZVldHeUU2REFsTkg5eUNobmVLeTlCaEl0SlpKSUU5OVk5djFNa2U1enhRYS1zNGVkOGdmV3JtWnZyVXNHT1RsTlZXelFDeVVuekhrVGhXR3FWWVJsd05tZDlaWHhJZnowbVBiNTJzdnVhZWZDdWtZZkFsY1RESmhCeFI',  "User-Agent": "MyBot/1.0"}
+
+SQLALCHEMY_DATABASE_URL = f"mysql://{USER}:{PASSWORD}@{HOST}:3306/{DATABASE}"
+POOL_PRE_PING=True
+POOL_SIZE=50
+MAX_OVERFLOW=20
+
+REDIS_HOST = HOST
+DB_PORT = 6379
+
+LEADERBOARD_KEY = "subreddit_leaderboard"

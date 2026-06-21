@@ -1,0 +1,20 @@
+info:
+  name: Reddit
+  type: http
+  seq: 5
+
+http:
+  method: GET
+  url: https://www.reddit.com/r/Python.json
+  headers:
+    - name: User-Agent
+      value: PostmanRuntime/7.54.0
+    - name: Cookie
+      value: csv=2; edgebucket=rI21wmwpsnlzMgghDO; loid=000000000x9hq5xcx9.2.1711802804129.Z0FBQUFBQm1DQW0wam1MUTZON2ViTXpPYllwZ19XSTgzeWtieEhqVlRPbjlNOFY4N0U0TVZGamxHZXphQTdzZWtyY0pRYU90WldrZUQzZXFxdWdQbWdjZzVlcUF3WGJUaDljNGdFYUhRTlVoQXkwcWNFZE5LNkh6OE1JUWgxYXNvYmJhT29UelNhRHg; session_tracker=edgrqlagnbihegljea.0.1711802804138.Z0FBQUFBQm1DQW0wdnROeHVZVldHeUU2REFsTkg5eUNobmVLeTlCaEl0SlpKSUU5OVk5djFNa2U1enhRYS1zNGVkOGdmV3JtWnZyVXNHT1RsTlZXelFDeVVuekhrVGhXR3FWWVJsd05tZDlaWHhJZnowbVBiNTJzdnVhZWZDdWtZZkFsY1RESmhCeFI
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

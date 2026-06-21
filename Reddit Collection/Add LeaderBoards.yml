@@ -1,0 +1,28 @@
+info:
+  name: Add LeaderBoards
+  type: http
+  seq: 4
+
+http:
+  method: POST
+  url: "{{localhost_python}}/api/v1/leaderboard"
+  body:
+    type: json
+    data: |-
+      {
+      //   "subreddit" : "MadeMeSmile"
+      //   "subreddit" : "python"
+        "subreddit" : "cprogramming"
+      }
+  auth: inherit
+
+runtime:
+  variables:
+    - name: localhost_python
+      value: http://127.0.0.1:8000
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5
